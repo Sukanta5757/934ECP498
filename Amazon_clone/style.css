@@ -3,12 +3,17 @@
     font-family: Arial;
     border:border-box;
 }
+
+/* navbar */
 .navbar {
     height: 60px;
     background-color: black;
     color: white;
     display: flex;
+    align-items: center;
 }
+
+/* box1 */
 .navbar .nav-logo{
     height: 50px;
     width: 100px;
@@ -20,4 +25,31 @@
 .navbar .nav-logo img {
     height: 100%; 
     width: 100%;
+}
+
+/* box2 */
+.navbar .nav-address{
+    margin-left: 2px;
+    border: 2px solid transparent;
+}
+
+.navbar .nav-address:hover{
+    border: 2px solid white;
+}
+
+.navbar .nav-address .deliver-to{
+    color: rgb(187, 175, 175);
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+.navbar .nav-address .add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-address .add-icon .india{
+ font-size: 15px;
+ margin-left: 3px;
+ color: white;
 }
