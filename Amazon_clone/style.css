@@ -92,3 +92,39 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+/* box4 */
+.navbar .nav-signin {
+    border: 2px solid transparent;
+}
+
+.navbar .nav-signin:hover {
+    border: 2px solid white;
+}
+
+.navbar .nav-signin span {
+    font-size: 15px;
+}
+
+.navbar .nav-signin .account-list{
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+/* box5 */
+.navbar .nav-order {
+    border: 2px solid transparent;
+}
+
+.navbar .nav-order:hover {
+    border:2px solid white;
+}
+
+.navbar .nav-order span{
+    font-size: 15px;
+}
+
+.navbar .nav-order .orders {
+    font-size: 20px;
+    font-weight: 600px;
+}
