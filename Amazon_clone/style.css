@@ -128,3 +128,23 @@
     font-size: 20px;
     font-weight: 600px;
 }
+
+/* box6 */
+.navbar .nav-cart {
+    display: flex;
+    border: 2px solid transparent;
+}
+
+.navbar .nav-cart:hover {
+    border: 2px solid white;
+}
+
+.navbar .nav-cart i {
+    font-size: 40px;
+}
+
+.navbar .nav-cart .cart {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600px;
+}
