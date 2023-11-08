@@ -80,7 +80,7 @@
             </div>
         </div>
     </header>
-
+    
     <!-- container -->
     <div class="container">
         <!-- benner section -->
@@ -105,10 +105,40 @@
                 <img src="images/benner6.jpg" alt="">
             </div>
             <div class="button">
-                <button  class="prev">&#10094;</button>
-                <button  class="next">&#10095;</button>
+                <button onclick="nextimg(-1)" class="prev">&#10094;</button>
+                <button onclick="nextimg(1)" class="next">&#10095;</button>
             </div>
         </div>
-    </div>
+
+        <script>
+            var imageno =1;
+            displayimg(imageno);
+
+            function nextimg(n){
+                displayimg(imageno += n)
+            }
     
+            function displayimg(n){
+                var i;
+                var image = document.getElementsByClassName("benner_image");
+    
+                if(n > image.length){
+                    imageno = 1;
+                }
+    
+                if(n < 1){
+                    imageno = image.length;
+                }
+    
+                for(i=0; i < image.length; i++){
+                    image[i].style.display = "none";
+                }
+    
+                image[imageno - 1].style.display ="block";
+    
+            }
+    
+        </script>
+    </div>
+</body>
 </html>
