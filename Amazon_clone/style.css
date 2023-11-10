@@ -285,6 +285,7 @@
 
 .carousel-control-prev{
     border: none;
+    margin-top: 3px;
     padding: 100px 30px;
     font-size: 34px;
     font-weight: bold;
@@ -293,6 +294,7 @@
 
 .carousel-control-next{
     border: none;
+    margin-top: 3px;
     padding: 100px 30px;
     font-size: 34px;
     font-weight: bold;
@@ -307,4 +309,64 @@
 .carousel-control-next:hover{
     border: 2px solid rgb(3, 56, 77);
     box-shadow: -4px 0px 5px 4px rgb(252, 253, 252);
+}
+
+/*product card content*/
+.main_content{
+    position: relative;
+    top:-350px;
+    /* background-color: rgb(196, 240, 240); */
+    /* filter: blur(8px); */
+    
+}
+
+.card-product-content{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.card-product{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+    box-shadow: -10px -0px 20px rgba(196, 240, 240,0.5),
+    50px 50px 20px rgba(196, 240, 240,0.5);
+    padding: 10px;
+}
+.card-product h2{
+    margin: 0;
+    padding: 10px;
+    
+}
+
+.nested-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.nested-card img {
+    width: 128px;
+    height: 102px;
+    object-fit: cover;
+
+}
+.nested-card p{
+    margin: 5px;
+}
+.card-product-btn{
+    font-size: 14px;
+    align-self: flex-start;
+    margin: 7px 10px; 
+    padding-left: 0;
+    background-color: transparent;
+    border:none;
+    color:rgb(25, 105, 105)
+}
+.card-product-btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
