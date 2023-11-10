@@ -254,50 +254,57 @@
     margin-right: 10px;
 }
 
-/* container */
-.container{
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    position: relative;
+/*carousel container */
+.carousel-container{
+    position:relative
 }
 
-.container .benner_image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* slider content */
+.carousel-inner{
+    display: flex;
     overflow: hidden;
 }
 
-.container .button{
-    position:absolute;
-    top: 10%;
-    left: 0;
+.carousel-item{
+    min-width: 100%;
+    transition: transform 0.5s;
+}
+
+.carousel-item img{
     width: 100%;
+    height: 100%; 
+}
+
+.button-p-n{
+    position: absolute;
+    top:0;
     display: flex;
     justify-content: space-between;
-    z-index: 5;
+    width: 100%;
 }
 
-.container .button button{
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    vertical-align: middle;
-    align-items: center;
-    cursor: pointer;
-    color: white;
-    background: rgba(0, 0, 0, 0.8);
-    font-size: 20px;
-    user-select: none;
+.carousel-control-prev{
+    border: none;
+    padding: 100px 30px;
+    font-size: 34px;
+    font-weight: bold;
+    background-color: transparent;
 }
 
-.container .button .prev{
-    border-radius: 0 5px 5px 0;
-    
+.carousel-control-next{
+    border: none;
+    padding: 100px 30px;
+    font-size: 34px;
+    font-weight: bold;
+    background-color: transparent;
 }
 
-.container .button .next{
-    border-radius: 5px 0 0 5px;
+.carousel-control-prev:hover{
+    border: 2px solid rgb(3, 56, 77);
+    box-shadow: 4px 0px 5px 4px rgb(252, 253, 252);
+}
+
+.carousel-control-next:hover{
+    border: 2px solid rgb(3, 56, 77);
+    box-shadow: -4px 0px 5px 4px rgb(252, 253, 252);
 }
