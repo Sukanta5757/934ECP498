@@ -278,6 +278,7 @@
 .button-p-n{
     position: absolute;
     top:0;
+    height: 248px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -314,9 +315,7 @@
 /*product card content*/
 .main_content{
     position: relative;
-    top:-350px;
-    /* background-color: rgb(196, 240, 240); */
-    /* filter: blur(8px); */
+    top:-310px;
     
 }
 
@@ -331,10 +330,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 300px;
-    box-shadow: -10px -0px 20px rgba(196, 240, 240,0.5),
-    50px 50px 20px rgba(196, 240, 240,0.5);
-    padding: 10px;
+    max-width: 310px;
+    box-shadow: 0px 150px 100px 20px rgb(214, 204, 204),
+    0px 250px 40px 20px rgb(214, 204, 204);
 }
 .card-product h2{
     margin: 0;
@@ -342,10 +340,15 @@
     
 }
 
-.nested-card{
+.product-nested-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.nested-card{
+    max-width: 128px;
+    padding: 10px;
 }
 
 .nested-card img {
