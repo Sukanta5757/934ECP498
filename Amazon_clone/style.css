@@ -376,7 +376,9 @@
 
 /* today's deals section  */
 .today_deals_container{
-    margin: 30px;
+    position: relative;
+    background-color: white;
+    margin: 20px;
     box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1),
     2px 2px 5px rgba(0, 0, 0, 0.1);
     
@@ -386,7 +388,7 @@
 .today_deals_heading{
     display: flex;
     align-items: center;
-    padding: 2px 20px;
+    padding: 10px 20px;
 }
 .today_deals_heading p a{
     color:rgb(39, 114, 107);
@@ -406,11 +408,13 @@
 
 /* product list */
 .today_deals_product_list{
+    /* margin: 20px; */
     display: flex;
     overflow: hidden;
 
 }
 .today_deals_item{
+    box-shadow: 0px 0px 0px 10px rgb(214, 204, 204);
     min-width: 250px;
     height: 250px;
     padding: 0px 10px;
@@ -433,6 +437,7 @@
     /* border: 2px solid red; */
 }
 .discount a{
+    font-size: 10px;
     padding: 5px 10px;
     font-size: 14px;
     color:rgb(211, 30, 84);
@@ -456,7 +461,6 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding: 20px;
     z-index: 10;
 }
 .today_btn{
@@ -465,4 +469,14 @@
     border: none;
     outline: none;
     background-color: rgb(255,255,255,0.4);
+}
+
+
+.todayDeals_product_image {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 15px;
 }
