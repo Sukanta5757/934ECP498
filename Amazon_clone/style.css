@@ -453,6 +453,11 @@
     font-size: 12px;
 }
 
+.today_deals_item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 /* buttons */
 .today_deals_btn{
     position: absolute;

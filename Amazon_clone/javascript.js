@@ -66,7 +66,7 @@ for (let i = 0; i < todayDeallength; i++) {
             <div class="todayDeals_product_image">
                 <img src=${todayDeal[i].img} />
             </div>
-            <div class="discount_Contaienr">
+            <div class="discount">
                 <a href="#">Up to ${todayDeal[i].discount}% off</a>
                 <a href="#">${todayDeal[i].DealOfDay}</a>
             </div>
