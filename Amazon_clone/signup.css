@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px -15px 30px 0px;
 }
 .container img{
     
@@ -17,6 +18,7 @@
 
 /* form content */
 .container form {
+    margin-bottom: 30px;
     border-radius: 10px;
     border: 1px solid rgb(168, 145, 145);
 }
@@ -97,11 +99,71 @@
  }
 
 /* sumbit button */
-.container button{
+.container .form_sumbit_btn {
     margin-top: 20px;
+    width: fit-content;
+    height: 60px;
+    box-shadow: -0px 1px 30px -20px ;
+}
+.container button{
     background-color: rgb(241, 199, 13);
-    height: 25px;
+    height: 30px;
     width: 350px;
     border-radius: 5px;
     border: 1px solid black;
+    font-size: 15px;
  }
+
+/* links */
+.container .form_links {
+ margin-top:30px;
+}
+
+.container .form_links p{
+    font-size: 15px;
+    margin-top:5px;
+}
+
+.container .form_links p a{
+    color: rgb(73, 83, 228);
+    margin-left: 5px;
+}
+
+/* policy */
+.container .form_policy {
+    margin-top: 30px;
+    width: 400px;
+}
+
+.container .form_policy p{
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.container .form_policy p a{
+    color: rgb(73, 83, 228);
+}
+
+/* footer content */
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer_content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .footer_content a {
+    color: rgb(73, 83, 228);
+    font-size: 12px;
+}
+
+footer .copyright {
+    margin-top: 10px;
+    font-size: 12px;
+}
