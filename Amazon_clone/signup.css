@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    font-family: Arial;
+    border:border-box;
 }
 
 .container {
@@ -12,3 +14,94 @@
     height: 100px;
     width: 200px;
 }
+
+/* form content */
+.container form {
+    border-radius: 10px;
+    border: 1px solid rgb(168, 145, 145);
+}
+ .container .inner_form {
+    margin: 20px;    
+}
+
+.container .form_input {
+    margin-top: 15px;
+
+}
+
+/* Name input */
+.container .form_input #user_name {
+    height: 25px;
+    width: 400px;
+    margin-top: 5px;
+    border: 1px solid rgb(113, 103, 103);
+    border-radius: 3px;
+}
+::placeholder {
+    padding: 10px;
+    color: gray;
+}
+
+/* Mobile input */
+.container .form_input select {
+    height: 30px;
+    width: 80px;
+    margin-top: 5px;
+    border:1px solid 1px solid rgb(113, 103, 103);
+    margin-right: 12px;
+    border-radius: 10px;
+}
+
+.container .form_input #user_mobile {
+    height: 25px;
+    margin-top: 5px;
+    width: 300px;
+}
+
+/* Email input */
+.container .form_input #user_email {
+    height: 25px;
+    margin-top: 5px;
+    width: 400px;
+}
+
+/* Password input */
+
+.container .form_input #user_password {
+    height: 25px;
+    margin-top: 5px;
+    width: 400px;
+}
+
+.container .form_input p {
+    font-size: 14px;
+    color: rgb(73, 67, 67);
+}
+
+.container .form_input p span{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(62, 159, 188);
+}
+
+/* Message */
+.container .form_message{
+   width: 400px;
+   margin-top: 30px;
+}
+
+.container .form_message{
+    font-size: 15px;
+    color: rgb(73, 67, 67);
+ }
+
+/* sumbit button */
+.container button{
+    margin-top: 20px;
+    background-color: rgb(241, 199, 13);
+    height: 25px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid black;
+ }
