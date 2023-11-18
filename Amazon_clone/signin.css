@@ -10,6 +10,10 @@
     justify-content: center;
     box-shadow: 0px -15px 30px 0px;
 }
+
+.inner_content{
+    margin-left: 60px;
+}
 .container img{
     
     height: 100px;
@@ -45,60 +49,6 @@
     color: gray;
 }
 
-/* Mobile input */
-.container .form_input select {
-    height: 30px;
-    width: 80px;
-    margin-top: 5px;
-    border:1px solid 1px solid rgb(113, 103, 103);
-    margin-right: 12px;
-    border-radius: 10px;
-}
-
-.container .form_input #user_mobile {
-    height: 25px;
-    margin-top: 5px;
-    width: 300px;
-}
-
-/* Email input */
-.container .form_input #user_email {
-    height: 25px;
-    margin-top: 5px;
-    width: 400px;
-}
-
-/* Password input */
-
-.container .form_input #user_password {
-    height: 25px;
-    margin-top: 5px;
-    width: 400px;
-}
-
-.container .form_input p {
-    font-size: 14px;
-    color: rgb(73, 67, 67);
-}
-
-.container .form_input p span{
-    font-size: 14px;
-    font-style: italic;
-    font-weight: bold;
-    color: rgb(62, 159, 188);
-}
-
-/* Message */
-.container .form_message{
-   width: 400px;
-   margin-top: 30px;
-}
-
-.container .form_message{
-    font-size: 15px;
-    color: rgb(73, 67, 67);
- }
-
 /* sumbit button */
 .container .form_sumbit_btn {
     margin-top: 20px;
@@ -115,21 +65,6 @@
     font-size: 15px;
  }
 
-/* links */
-.container .form_links {
- margin-top:30px;
-}
-
-.container .form_links p{
-    font-size: 15px;
-    margin-top:5px;
-}
-
-.container .form_links p a{
-    color: rgb(73, 83, 228);
-    margin-left: 5px;
-}
-
 /* policy */
 .container .form_policy {
     margin-top: 30px;
@@ -145,9 +80,72 @@
     color: rgb(73, 83, 228);
 }
 
-/* footer content */
+/* sign form_help_forgot */
 
-footer {
+.container .form_help_forgot {
+    margin-top: 30px;
+    width: 400px;
+}
+
+.form_help_forgot .forgot_link{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: rgb(73, 83, 228);
+}
+
+.form_help_forgot .issues_link{
+    font-size: 15px;
+    margin-bottom: 30px;
+    
+}
+
+.form_help_forgot a {
+    color: rgb(73, 83, 228);
+}
+
+/* new to amazon */
+.new_create {
+    margin: 20px;
+}
+.new_create h4 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    column-gap: 10px;
+    color: rgb(161, 142, 142);
+    font-size: 15px;
+}
+
+.new_to::before, .new_to::after {
+    content:"" ;
+    height: 0.5px;
+    background-color: rgb(224, 213, 213);
+}
+
+
+/* create account button */
+.container .new_create_btn {
+    margin-top: 20px;
+    width: fit-content;
+    height: 60px;
+}
+.container .new_create_btn button{
+    background-color: white;
+    height: 30px;
+    width: 405px;
+    border-radius: 5px;
+    border:0.2px solid;
+    font-size: 15px;
+ }
+
+ .container .new_create_btn button:hover {
+    background-color:rgb(174, 248, 248);
+ }
+
+
+
+/* footer content */
+ footer {
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -165,6 +163,9 @@ footer .footer_content a {
 }
 
 footer .copyright {
+margin-right: 50p;
     margin-top: 10px;
+    margin-bottom: 40px;
     font-size: 12px;
+
 }
