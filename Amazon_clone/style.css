@@ -18,10 +18,10 @@
 .navbar .nav-logo{
     height: 50px;
     width: 100px;
-    border: 2px solid rgb(221, 130, 130);
+    border: 1px solid rgb(221, 130, 130);
 }
 .navbar .nav-logo:hover{
-    border: 2px solid white;
+    border: 1px solid white;
 }
 .navbar .nav-logo img {
     height: 100%; 
@@ -38,7 +38,7 @@
 }
 
 .navbar .nav-address:hover{
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .navbar .nav-address .deliver-to{
@@ -105,7 +105,7 @@
 }
 
 .navbar .nav-signin:hover {
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .navbar .nav-signin span {
@@ -126,7 +126,7 @@
 }
 
 .navbar .nav-order:hover {
-    border:2px solid white;
+    border:1px solid white;
 }
 
 .navbar .nav-order span{
@@ -147,7 +147,7 @@
 }
 
 .navbar .nav-cart:hover {
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .navbar .nav-cart i {
@@ -550,6 +550,7 @@
 
 /* panel media query screen minmum 768px */
 @media (min-width:768px) {
+     /* left panel */
      .left-panel .left-panel-all  i {
          font-size: 20px;
      }
@@ -571,6 +572,47 @@
      }
      
  }
+
+ /* panel media query screen minmum 992px */
+@media (min-width:992px) {
+     /* left panel */
+    .left-panel{
+        margin-right: px;
+    }
+
+    .left-panel .left-panel-all  i {
+        font-size: 20px;
+    }
+
+    .left-panel .left-panel-all  p {
+        margin-left: 3px;
+        font-size: 15px;
+    }
+
+    .left-panel .left-panel-opction p {
+        margin-right: 7px;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    /* Right Panel */
+    .right-panel {
+        display:block;
+    }
+
+    .right-panel .right-panel-opction .festival{
+        font-size: 11px;
+        width: 100px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    
+    .right-panel .right-panel-opction .shop-now {
+        font-size: 13px;
+        width: 80px;
+    }
+    
+}
  
 /*carousel container */
 .carousel-container{
