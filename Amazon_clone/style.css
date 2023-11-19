@@ -159,7 +159,7 @@
     font-size: 20px;
     font-weight: 600px;
 }
-
+/* navbar media query */
 @media (min-width:480px) {
     .main_content{
         display: none;
@@ -430,24 +430,16 @@
 }
 
 .left-panel .left-panel-all:hover {
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .left-panel .left-panel-all  i {
     font-size: 22px;
-    /* margin-left: 5px;
-    font-size: 22px;
-    color: white;
-    font-weight: bold; */
 }
 
 .left-panel .left-panel-all  p {
     font-size: 15px;
-    /* margin-left: 5px;
-    margin-right: 5px;
-    font-size: 15px;
-    color: white;
-    font-weight: bold; */
+  
 }
 
 .left-panel .left-panel-opction {
@@ -519,6 +511,39 @@
     margin-left: 3px;
     font-size: 18px;
     margin-right: 10px;
+}
+
+/* panel media query */
+@media (min-width:480px) {
+   /* left panel */
+    .left-panel .left-panel-all {
+        margin-left: 5px;
+    }
+
+    .left-panel .left-panel-all  i {
+        font-size: 17px;
+    }
+
+    .left-panel .left-panel-all  p {
+        margin-left: 3px;
+        font-size: 12px;
+    }
+
+    .left-panel .left-panel-opction {
+        margin: 5px;
+    }
+
+    .left-panel .left-panel-opction p {
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 10px;
+    }
+
+    /* Right Panel */
+    .right-panel {
+        display:none;
+    }
+    
 }
 
 /*carousel container */
