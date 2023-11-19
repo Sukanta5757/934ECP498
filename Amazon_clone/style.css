@@ -160,7 +160,7 @@
     font-weight: 600px;
 }
 /* navbar media query screen minimum 480px */
-@media (min-width:480px) {
+@media (min-width:480px) and (max-width:767px) {
     .main_content{
         display: none;
     }
@@ -243,7 +243,7 @@
 }
 
 /* navbar media query screen minimum 768px */
-@media (min-width:768px) {
+@media (min-width:768px) and (max-width:991px) {
 
     .main_content{
         display: block;
@@ -329,7 +329,7 @@
 }
 
 /* navbar media query screen minimum 992px */
-@media (min-width:992px){
+@media (min-width:992px) and (max-width:1200px){
     /* box1 */
     .navbar .nav-logo{
         height: 50px;
@@ -339,11 +339,13 @@
     /* box2 */
     .navbar .nav-address{
         height: 50px;
-        width: 90px;
+        width: 80px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .navbar .nav-address .deliver-to{
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .navbar .nav-address .add-icon .india{
@@ -353,22 +355,23 @@
 
     /* box3 */
     .navbar .nav-search-bar {
-        width: 620px;
+        width: 600px;
         height: 40px;
      }
 
     /* box4 */
     .navbar .nav-signin {
         height: 50px;
-        width: 170px;
+        width: 160px;
+        margin-left: 10px;
     }
 
     .navbar .nav-signin span {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .navbar .nav-signin .account-list{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     /* box5 */
@@ -378,11 +381,11 @@
     }
 
     .navbar .nav-order span{
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .navbar .nav-order .orders {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     /* box6 */
@@ -393,11 +396,11 @@
     }
 
     .navbar .nav-cart i {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .navbar .nav-cart .cart {
-        font-size: 20px;
+        font-size: 18px;
     }
     
 }
