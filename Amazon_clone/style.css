@@ -162,7 +162,7 @@
 /* navbar media query screen minimum 480px */
 @media (min-width:480px) and (max-width:767px) {
     .main_content{
-        display: none;
+        display: block;
     }
     footer{
         display: none;
@@ -771,7 +771,7 @@
 .card-product h2{
     margin: 0;
     padding: 10px;
-    
+ 
 }
 
 .product-nested-cards {
@@ -793,6 +793,7 @@
 }
 .nested-card p{
     margin: 5px;
+    font-weight: bold;
 }
 .card-product-btn{
     font-size: 14px;
@@ -806,6 +807,46 @@
 .card-product-btn:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+
+/*product card media query screen minimum 480px */
+@media (min-width:480px) and (max-width:767px) {
+
+    /*product card content*/
+   .main_content{
+       top:-125px;
+   }
+
+   .card-product{
+    max-width: 767px;
+    box-shadow: 0px 30px 100px 20px rgb(214, 204, 204),
+    0px 110px 20px 20px rgb(214, 204, 204);
+    }
+   
+   .card-product-content{
+       padding: 15px;
+       display: block;
+   
+   }
+
+   .card-product h2{
+    font-size:18px;
+    
+    }
+
+   .nested-card{
+    max-width: 100px;
+    padding: 5px;
+    }
+
+    .nested-card img {
+        width: 100px;
+    }
+
+    .nested-card p{
+        margin: 2px;
+        font-size: 10px;
+    }
 }
 
 /* today's deals section  */
