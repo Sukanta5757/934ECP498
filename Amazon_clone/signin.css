@@ -22,7 +22,7 @@
 
 /* form content */
 .container form {
-    width: 450px;
+    width: 350px;
     margin-bottom: 30px;
     border-radius: 10px;
     border: 1px solid rgb(168, 145, 145);
@@ -39,14 +39,10 @@
 /* Name input */
 .container .form_input #user_name {
     height: 25px;
-    width: 400px;
+    width: 300px;
     margin-top: 5px;
     border: 1px solid rgb(113, 103, 103);
     border-radius: 3px;
-}
-::placeholder {
-    padding: 10px;
-    color: gray;
 }
 
 /* sumbit button */
@@ -59,7 +55,7 @@
 .container button{
     background-color: rgb(241, 199, 13);
     height: 30px;
-    width: 405px;
+    width: 305px;
     border-radius: 5px;
     border:none;
     font-size: 15px;
@@ -68,11 +64,12 @@
 /* policy */
 .container .form_policy {
     margin-top: 30px;
-    width: 400px;
+    width: 300px;
+
 }
 
 .container .form_policy p{
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 5px;
 }
 
@@ -84,11 +81,11 @@
 
 .container .form_help_forgot {
     margin-top: 30px;
-    width: 400px;
+    width: 300px;
 }
 
 .form_help_forgot .forgot_link{
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 10px;
     color: rgb(73, 83, 228);
 }
@@ -105,20 +102,34 @@
 
 /* new to amazon */
 .new_create {
-    margin: 20px;
+    margin-top: 20px;
 }
 .new_create h4 {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    align-items: center;
-    column-gap: 10px;
+    text-align: center;
+    max-width: 350px;
+    position:relative;
     color: rgb(161, 142, 142);
     font-size: 15px;
+    font-weight: 400;
 }
 
-.new_to::before, .new_to::after {
-    content:"" ;
-    height: 0.5px;
+.new_create h4::before {
+    width: 110px;
+    height:1px;
+    content: "";
+    position: absolute;
+    left:0;
+    top: 50%;
+    background-color: rgb(224, 213, 213);
+}
+
+.new_create h4::after {
+    width: 110px;
+    height:1px;
+    content: "";
+    position: absolute;
+    right:0;
+    top: 50%;
     background-color: rgb(224, 213, 213);
 }
 
@@ -132,9 +143,9 @@
 .container .new_create_btn button{
     background-color: white;
     height: 30px;
-    width: 405px;
+    width: 350px;
     border-radius: 5px;
-    border:0.2px solid;
+    border:0.2px solid rgb(207, 195, 195);
     font-size: 15px;
  }
 
