@@ -10,6 +10,13 @@
     justify-content: center;
     box-shadow: 0px -15px 30px 0px;
 }
+
+.amazon_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container img{
     
     height: 100px;
@@ -18,7 +25,7 @@
 
 /* form content */
 .container form {
-    width: 450px;
+    width: 350px;
     margin-bottom: 30px;
     border-radius: 10px;
     border: 1px solid rgb(168, 145, 145);
@@ -35,7 +42,7 @@
 /* Name input */
 .container .form_input #user_name {
     height: 25px;
-    width: 400px;
+    width: 300px;
     margin-top: 5px;
     border: 1px solid rgb(113, 103, 103);
     border-radius: 3px;
@@ -48,7 +55,7 @@
 /* Mobile input */
 .container .form_input select {
     height: 30px;
-    width: 80px;
+    width: 70px;
     margin-top: 5px;
     border:1px solid 1px solid rgb(113, 103, 103);
     margin-right: 12px;
@@ -58,14 +65,14 @@
 .container .form_input #user_mobile {
     height: 25px;
     margin-top: 5px;
-    width: 300px;
+    width: 210px;
 }
 
 /* Email input */
 .container .form_input #user_email {
     height: 25px;
     margin-top: 5px;
-    width: 400px;
+    width: 300px;
 }
 
 /* Password input */
@@ -73,11 +80,11 @@
 .container .form_input #user_password {
     height: 25px;
     margin-top: 5px;
-    width: 400px;
+    width: 300px;
 }
 
 .container .form_input p {
-    font-size: 14px;
+    font-size: 12px;
     color: rgb(73, 67, 67);
 }
 
@@ -90,12 +97,12 @@
 
 /* Message */
 .container .form_message{
-   width: 400px;
+   width: 300px;
    margin-top: 30px;
 }
 
 .container .form_message{
-    font-size: 15px;
+    font-size: 13px;
     color: rgb(73, 67, 67);
  }
 
@@ -109,10 +116,14 @@
 .container button{
     background-color: rgb(241, 199, 13);
     height: 30px;
-    width: 405px;
+    width: 305px;
     border-radius: 5px;
     border:none;
     font-size: 15px;
+ }
+
+ .container button:hover{
+    background-color:  rgb(226, 188, 18);
  }
 
 /* links */
@@ -121,7 +132,7 @@
 }
 
 .container .form_links p{
-    font-size: 15px;
+    font-size: 13px;
     margin-top:5px;
 }
 
@@ -133,11 +144,11 @@
 /* policy */
 .container .form_policy {
     margin-top: 30px;
-    width: 400px;
+    width: 300px;
 }
 
 .container .form_policy p{
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 5px;
 }
 
@@ -165,6 +176,7 @@ footer .footer_content a {
 }
 
 footer .copyright {
+    color: rgb(98, 86, 86);
     margin-top: 10px;
     font-size: 12px;
 }
