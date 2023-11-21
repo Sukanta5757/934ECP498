@@ -14,6 +14,13 @@
 .inner_content{
     margin-left: 60px;
 }
+
+.amazon_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container img{
     
     height: 100px;
