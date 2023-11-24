@@ -1,15 +1,15 @@
 import { todayDeal } from "./todayDeal.js";
 
-//slider content
+//banner slider section start
 let prevBtn = document.getElementById("prev");
 let nextBtn = document.getElementById("next");
-let imageItem = document.querySelectorAll(".carousel-item");
+let imageItem = document.querySelectorAll(".banner_item");
 let startSlider = 0;
 let endSlider = (imageItem.length -1) * 100;
 
-prevBtn.addEventListener("click", controlPrev);
+prevBtn.addEventListener("click", controlPrev); // function call
 
-//left slider function
+//banner left slider function start
 function controlPrev(){
     if(startSlider < 0){
         startSlider = startSlider + 100;
@@ -19,9 +19,11 @@ function controlPrev(){
         Element.style.transform = `translateX(${startSlider}%)`;
     })
 };
-nextBtn.addEventListener("click",controlNext);
+//banner left slider function end
 
-    //right slider function
+nextBtn.addEventListener("click",controlNext); // function call
+
+    //banner right slider function start
     function controlNext(){
         if(startSlider >= -endSlider + 100){
             startSlider = startSlider - 100;
@@ -33,8 +35,9 @@ nextBtn.addEventListener("click",controlNext);
             Element.style.transform = `translateX(${startSlider}%)`;
         })
     };
+    //banner right slider functon end
 
-    //auto slider function
+//banner auto slider function start
 function renderAutoSilder(){
     if(startSlider >= -endSlider + 100){
         controlNext()
@@ -47,9 +50,10 @@ function renderAutoSilder(){
     })
 };
 setInterval(renderAutoSilder,5000);
+//banner auto slider function end
+//banner slider section end
 
-
-//today deals sliders
+//today's deals sliders section start
 console.log(todayDeal)
 let todayDealProductListEl = document.querySelector(".today_deals_product_list")
 console.log(todayDealProductListEl)
@@ -58,6 +62,7 @@ let todayDealProductHTML = ""
 
 let todayDeallength = todayDeal.length
 
+// today's deals slider for loops start
 for (let i = 0; i < todayDeallength; i++) {
     // console.log(todayDeal[i])
 
@@ -78,13 +83,15 @@ for (let i = 0; i < todayDeallength; i++) {
 todayDealProductListEl.innerHTML = todayDealProductHTML
 //  console.log(todayDealProductHTML)
 
+// today's deals slider for loops end
+
 let today_deal_btn_prevEl = document.getElementById("today_deal_btn_prev")
 let today_deal_btn_nextEl = document.getElementById("today_deal_btn_next")
 let today_deals_product_itemEl = document.querySelectorAll(".today_deals_item")
 
 let startProduct = 0;
 
-
+//today's deals left slider arrow function start
 today_deal_btn_prevEl.addEventListener("click", () => {
 
    
@@ -98,7 +105,9 @@ today_deal_btn_prevEl.addEventListener("click", () => {
     }
 
 })
+//today's deals left slider arrow function end
 
+//today's deals right slider arrow function start
 today_deal_btn_nextEl.addEventListener("click", () => {
     // alert("next")
     
@@ -112,3 +121,5 @@ today_deal_btn_nextEl.addEventListener("click", () => {
     
     
 })
+//today's deals right slider arrow function end
+//today's deals section end
