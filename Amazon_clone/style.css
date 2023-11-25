@@ -753,14 +753,13 @@
 
 /* banner section end */
 
-/* main section start */
-.main_content{
+/* card product section start */
+.card_product_section{
     position: relative;
-    top:-280px;
+    margin-top:-280px;
     
 }
 
-/* card product section start */
 .card-product-content{
     padding: 20px;
     display: flex;
@@ -817,14 +816,12 @@
     cursor: pointer;
 }
 
-/* card product section end */
-
 /* card product  media query screen 480px - 767px start */
 @media (min-width:480px) and (max-width:767px) {
 
     /*card product section start*/
-   .main_content{
-       top:-135px;
+   .card_product_section{
+       margin-top:-135px;
    }
 
    .card-product{
@@ -867,8 +864,8 @@
 @media (min-width:768px) and (max-width:991px) {
 
     /* card product section start*/
-   .main_content{
-       top:-190px;
+   .card_product_section{
+       margin-top:-190px;
    }
 
    .card-product-content{
@@ -912,8 +909,8 @@
 @media (min-width:992px) and (max-width:1200px) {
 
     /* card product section start*/
-   .main_content{
-       top:-240px;
+   .card_product_section{
+       margin-top:-240px;
    }
 
    .card-product-content{
@@ -952,6 +949,7 @@
     /* card product section end */
 }
 /* card product media query screen 992px -1200px end */
+/* card product section end */
 
 /* today's deals section start */
 .today_deals_container{
@@ -1072,9 +1070,6 @@
 
 /* today's deals screen 480px - 767px start */
 @media (min-width:480px) and (max-width:767px){
-    footer{
-        display: none;
-    }
     /* today's deals section start */
     .today_deals_container{
         height: 250px;
@@ -1143,7 +1138,7 @@
 
 /* footer section start */
 footer {
-    margin-top: -300px;
+    /* margin-top: -300px; */
     position: relative;
 }
 
