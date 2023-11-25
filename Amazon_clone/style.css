@@ -906,7 +906,7 @@
 /* card product media query screen 768px - 991px end */
 
 /* card product media query screen 992px - 1200px start */
-@media (min-width:992px) and (max-width:1200px) {
+@media (min-width:992px) and (max-width:1205px) {
 
     /* card product section start*/
    .card_product_section{
@@ -1053,7 +1053,7 @@
     font-size: 40px;
     border: none;
     outline: none;
-    background-color: rgb(255,255,255,0.4);
+    background-color: rgba(149, 121, 121, 0.4);
 }
 /* buttons end */
 
@@ -1198,6 +1198,31 @@
 
 }
 /* today's deals screen 768px - 991px end */
+
+/* today's deals screen 992px - 1200px start */
+@media (min-width:992px) and (max-width:1200px){
+    /* today's deals section start */     
+    .today_deals_heading{
+        padding: 5px 5px;
+    }
+
+    .today_deals_item{
+        align-items: center;
+    }
+
+    .today_deals_item p {
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .todayDeals_product_image {
+        height: 60%;
+        width: 90%;
+    }
+    /* today's deals section end */
+
+}
+/* today's deals screen 992px - 1200px end */
 /* today's deals section end */
 
 
