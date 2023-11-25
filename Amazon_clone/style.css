@@ -1133,6 +1133,71 @@
 
 }
 /* today's deals screen 480px - 767px end */
+
+/* today's deals screen 768px - 991px start */
+@media (min-width:768px) and (max-width:991px){
+    /* today's deals section start */
+    .today_deals_container{
+        height: 250px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+        
+    .today_deals_heading{
+        padding: 5px 5px;
+    }
+
+    .today_deals_heading h1{
+        font-size: medium;
+    }
+
+    .today_deals_heading p a{
+        font-size: small;
+        padding-left: 10px;
+    }
+
+    .today_deals_product{
+        height: 150px;
+        position: relative;
+    }
+
+    .today_deals_item{
+        min-width: 200px;
+        height: 220px;
+        align-items: center;
+        transition: transform 2s;
+    }
+
+    .discount a{
+        font-size: 12px;
+    }
+    .discount a:first-child{
+        font-size: 10px;
+    }
+
+    .today_deals_item p {
+        font-size: 12px;
+    }
+
+    .today_deals_btn{
+        height: 200px;
+        z-index: 10;
+    }
+    .today_btn{
+        padding: 30px 8px;
+        font-size: 40px;
+    }
+
+    .todayDeals_product_image {
+        height: 50%;
+        width: 70%;
+    }
+    /* today's deals section end */
+
+}
+/* today's deals screen 768px - 991px end */
 /* today's deals section end */
 
 
