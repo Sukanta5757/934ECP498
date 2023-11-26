@@ -11,82 +11,11 @@
     <!-- hearder section start -->
     <header>
         <!-- navbar section start -->
-        <div class="navbar">
-            <!------  box1 -->
-            <div class="nav-logo">
-                <img src="images/amazon_logo.png" alt="amazon logo"></img>
-            </div>
-            <!------  box2 -->
-            <div class="nav-address">
-                <div class="address_inner">
-                    <p class="deliver-to">Deliver to</p>
-                <div class="add-icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="india">India</p>
-                </div>
-                </div>
-            </div>
-            <!------  box3 -->
-            <div class="nav-search-bar">
-                <select class="search-select">
-                    <option class="select-all">All</option>
-                </select>
-                <input class="search-input" type="text" name="" id="" placeholder="Search Product" ></input>
-                <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-            <!------  box4 -->
-            <div class='nav-signin'>
-                <div class="signin_inner">
-                    <p class="signin"><span>Helo, sign in</span></p>
-                    <p class="account-list">Account & List</p>
-                </div>
-            </div>
-            <!------  box5 -->
-            <div class='nav-order'>
-                <div class="order_inner">
-                <p class="returns"><span>Returns</span></p>
-                <p class="orders">& Orders</p></div>
-            </div>
-            <!------  box6 -->
-            <div class='nav-cart'>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p class="cart">Cart</p>
-            </div>
-        </div>
+        {{>navbar}}
         <!-- navbar section end -->
 
         <!-- Panel section start -->
-        <div class="panel">
-            <!------  Left Panel -->
-            <div class='left-panel'>
-                <div class="left-panel-all">
-                    <i class="fa-solid fa-bars"></i>
-                    <p>All</p>
-                </div>
-                <div class="left-panel-opction">
-                   <div class="opction_list"><p>Amazon MiniTV</p></div>    
-                    <div class="opction_list"><p>Sell</p></div>
-                    <div class="opction_list"><p>Best Sellers</p></div>
-                    <div class="opction_list"><p>Today's Deals</p></div>
-                    <div class="opction_list"><p>Mobiles</p></div>
-                    <div class="opction_list"><p>Customer Service</p></div>
-                    <div class="opction_list"><p>Electronics</p></div>
-                    <div class="opction_list"><p>Prime <i class="fa-solid fa-caret-down"></i></p></div>
-                    <div class="opction_list"><p>New Releases</p></div>
-                </div>
-            </div>
-            <!------  Right Panel -->
-            <div class='right-panel'>
-                <div class='right-panel-opction'>
-                    <div class="opction_list"><p class="festival"><span>Great India Festival Finale days</span></p></div>
-                    <div class="opction_list"><p class="vertical">|</p></div>
-                    <div class="opction_list"><p class="shop-now"> SHOP NOW </p></div>
-                    <div class="opction_list"><i class="fa-solid fa-angles-right"></i></div>
-                </div>
-            </div>
-        </div>
+        {{>panelbar}}
         <!-- panel section end-->
     </header>
     <!-- hearder section end -->
@@ -444,82 +373,7 @@
     <!-- main section end -->
 
     <!-- footer section start-->
-    <footer>
-        <!-- footer panel 1 start -->
-        <div class="footer_panel1">
-            Back to top
-        </div>
-        <!-- footer panel 1 end -->
-
-        <!-- footer panel 2 start -->
-        <div class="footer_panel2">
-            <ul>
-                <p>Get to Know Us</p>
-                <a>Careers</a>
-                <a>Blog</a>
-                <a>About Amazon</a>
-                <a>Investor Relations</a>
-                <a>Amazon Devices</a>
-                <a>Amazon Science</a>
-            </ul>
-
-            <ul>
-                <p>Make Money with Us</p>
-                <a>Sell products on Amazon</a>
-                <a>Sell on Amazon Business</a>
-                <a>Sell apps on Amazon</a>
-                <a>Become an Affiliate</a>
-                <a>Advertise Your Products</a>
-                <a>Self-Publish with Us</a>
-                <a>›See More Make Money with Us</a>
-            </ul>
-
-            <ul>
-                <p>Amazon Payment Products</p>
-                <a>Amazon Business Card</a>
-                <a>Shop with Points</a>
-                <a>Reload Your Balance</a>
-                <a>Amazon Currency Converter</a>
-            </ul>
-
-            <ul>
-                <p>Let Us Help You</p>
-                <a>Amazon and COVID-19</a>
-                <a>Your Account</a>
-                <a>Your Orders</a>
-                <a>Shipping Rates & Policies</a>
-                <a>Return & Replacements</a>
-                <a>Manage Your Conent and Devices</a>
-                <a>Amazon Assistant</a>
-                <a>Help</a>
-            </ul>
-        </div>
-        <!-- footer panel 2 start end -->
-
-        <!-- footer panel 3 start-->
-        <div class="footer_panel3">
-            <img src="images/amazon_logo.png" alt="">
-            <div class="language_content">
-                <i class="fa-solid fa-globe"></i>
-                <h5>English</h5>
-                <i id="down" class="fa-solid fa-caret-down"></i>
-            </div> 
-        </div>
-        <!-- footer panel 3 end -->
-
-        <!-- footer panel 4 start -->
-        <div class="footer_panel4">
-            <div class="footer_content">
-                <a href="">Conditions of Use & Sale</a>
-                <a href="">Privacy Notice</a>
-                <a href="">Interest-Based Ads</a>
-            </div>
-            <div class="copyright">
-                © 1996-2023, Amazon.com, Inc. or its affiliates
-            </div>
-        </div>
-        <!-- footer panel 5 end -->
-    </footer>
+    {{>footer}}
     <!-- footer section end -->
     <script src="js/javascript.js" type="module"></script>
 </body>
