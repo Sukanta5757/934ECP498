@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- hearder section start -->
+    <header>
+        <!-- navbar section start -->
+        <div class="navbar">
+            <!------  box1 -->
+            <div class="nav-logo">
+                <img src="images/amazon_logo.png" alt="amazon logo"></img>
+            </div>
+            <!------  box2 -->
+            <div class="nav-address">
+                <div class="address_inner">
+                    <p class="deliver-to">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="india">India</p>
+                </div>
+                </div>
+            </div>
+            <!------  box3 -->
+            <div class="nav-search-bar">
+                <select class="search-select">
+                    <option class="select-all">All</option>
+                </select>
+                <input class="search-input" type="text" name="" id="" placeholder="Search Product" ></input>
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <!------  box4 -->
+            <div class='nav-signin'>
+                <div class="signin_inner">
+                    <p class="signin"><span>Helo, sign in</span></p>
+                    <p class="account-list">Account & List</p>
+                </div>
+            </div>
+            <!------  box5 -->
+            <div class='nav-order'>
+                <div class="order_inner">
+                <p class="returns"><span>Returns</span></p>
+                <p class="orders">& Orders</p></div>
+            </div>
+            <!------  box6 -->
+            <div class='nav-cart'>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="cart">Cart</p>
+            </div>
+        </div>
+        <!-- navbar section end -->
+
+        <!-- Panel section start -->
+        <div class="panel">
+            <!------  Left Panel -->
+            <div class='left-panel'>
+                <div class="left-panel-all">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>All</p>
+                </div>
+                <div class="left-panel-opction">
+                   <div class="opction_list"><p>Amazon MiniTV</p></div>    
+                    <div class="opction_list"><p>Sell</p></div>
+                    <div class="opction_list"><p>Best Sellers</p></div>
+                    <div class="opction_list"><p>Today's Deals</p></div>
+                    <div class="opction_list"><p>Mobiles</p></div>
+                    <div class="opction_list"><p>Customer Service</p></div>
+                    <div class="opction_list"><p>Electronics</p></div>
+                    <div class="opction_list"><p>Prime <i class="fa-solid fa-caret-down"></i></p></div>
+                    <div class="opction_list"><p>New Releases</p></div>
+                </div>
+            </div>
+            <!------  Right Panel -->
+            <div class='right-panel'>
+                <div class='right-panel-opction'>
+                    <div class="opction_list"><p class="festival"><span>Great India Festival Finale days</span></p></div>
+                    <div class="opction_list"><p class="vertical">|</p></div>
+                    <div class="opction_list"><p class="shop-now"> SHOP NOW </p></div>
+                    <div class="opction_list"><i class="fa-solid fa-angles-right"></i></div>
+                </div>
+            </div>
+        </div>
+        <!-- panel section end-->
+    </header>
+    <!-- hearder section end -->
+    
+    <!-- main section start -->
+    <main class="main_content">
+         <!--benner section start -->
+        <div class="banner_container">
+            <div class="banner_inner">
+            <div class="banner_item">
+                <img src="images/benner1.jpg"  alt="">
+            </div>
+                <div class="banner_item">
+                    <img src="images/benner2.jpg" alt="">
+                </div>
+                <div class="banner_item">
+                    <img src="images/benner3.jpg"  alt="">
+                </div>
+                <div class="banner_item">
+                    <img src="images/benner4.jpg" alt="">
+                </div>
+                <div class="banner_item">
+                    <img src="images/benner5.jpg" alt="">
+                </div>
+                <div class="banner_item">
+                    <img src="images/benner6.jpg" alt="">
+                </div>
+            </div>
+            <!-- button start -->
+            <div class="button-p-n">
+                <button class="banner_control-prev hover" type="button" id="prev">
+                    &#10094;
+                </button>
+                <button class="banner_control-next hover" type="button" id="next">
+                    &#10095;
+                </button>
+            </div>
+            <!-- button end -->
+        </div>
+        <!-- banner section end -->
+
+        <!-- card product section start -->
+        <div class="card_product_section">
+            <div class="card-product-content">
+            <div class="card-product">
+                    <h2>Deals on smartphones that suits your budget</h2>
+                    <div class="product-nested-cards">
+                        <div class="nested-card">
+                            <img src="images/cardmob1.jpg">
+                            <p>Budget | Under ₹10,000</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/cardmob2.jpg">
+                            <p>Mid range | ₹10,000 - ₹25,000</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/cardmob3.jpg">
+                            <p>Premium | ₹25,000 - ₹40,000</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/cardmob4.jpg">
+                            <p>Ultra premium | Above ₹40,000</p>
+                        </div>
+                    </div>
+                    <button class="card-product-btn">see more</button>
+                </div> 
+                
+                <div class="card-product">
+                    <h2>Up to 75% off | Headphones</h2>
+                    <div class="product-nested-cards">
+                        <div class="nested-card">
+                            <img src="images/card1.jpg">
+                            <p>boAt Up to 75% off | boAt</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card2.jpg">
+                            <p>boAtUp to 75% off | boult</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card3.jpg">
+                            <p>boAtUp to 75% off | noise</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card4.jpg">
+                            <p>boAtUp to 75% off | zebronics</p>
+                        </div>
+                    </div>
+                    <button class="card-product-btn">see more</button>
+                </div>
+
+                <div class="card-product">
+                    <h2>Up to 60% off | Styles for men</h2>
+                    <div class="product-nested-cards">
+                        <div class="nested-card">
+                            <img src="images/card5.jpg">
+                            <p>Clothing</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card6.jpg">
+                            <p>Footwear</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card7.jpg">
+                            <p>Watches</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card8.jpg">
+                            <p>Bags & wallets</p>
+                        </div>
+                    </div>
+                    <button class="card-product-btn">see more</button>
+                </div>
+
+                <div class="card-product">
+                    <h2>Revamp your home in style</h2>
+                    <div class="product-nested-cards">
+                        <div class="nested-card">
+                            <img src="images/card9.jpg">
+                            <p>Bedsheets, curtains & more</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card10.jpg">
+                            <p>Home decoration</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card11.jpg">
+                            <p>Home storage</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card12.jpg">
+                            <p>Lighting solutions</p>
+                        </div>
+                    </div>
+                    <button class="card-product-btn">see more</button>
+                </div>
+            </div>
+
+            <div class="card-product-content">
+                <div class="card-product">
+                    <h2>Appliances for your home | Up to 55% off</h2>
+                    <div class="product-nested-cards">
+                        <div class="nested-card">
+                            <img src="images/card13.jpg">
+                            <p>Air conditioners</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card14.jpg">
+                            <p>Refrigerators</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card15.jpg">
+                            <p>Microweves</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card16.jpg">
+                            <p>Washising machines</p>
+                        </div>
+                    </div>
+                    <button class="card-product-btn">see more</button>
+                </div>
+
+                <div class="card-product">
+                    <h2>Revamp your home in style</h2>
+                    <div class="product-nested-cards">
+                        <div class="nested-card">
+                            <img src="images/card9.jpg">
+                            <p>Bedsheets, curtains & more</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card10.jpg">
+                            <p>Home decoration</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card11.jpg">
+                            <p>Home storage</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card12.jpg">
+                            <p>Lighting solutions</p>
+                        </div>
+                    </div>
+                    <button class="card-product-btn">see more</button>
+                </div>
+
+                <div class="card-product">
+                    <h2>Up to 60% off | Styles for men</h2>
+                    <div class="product-nested-cards">
+                        <div class="nested-card">
+                            <img src="images/card5.jpg">
+                            <p>Clothing</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card6.jpg">
+                            <p>Footwear</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card7.jpg">
+                            <p>Watches</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card8.jpg">
+                            <p>Bags & wallets</p>
+                        </div>
+                    </div>
+                    <button class="card-product-btn">see more</button>
+                </div>
+
+                <div class="card-product">
+                    <h2>Up to 75% off | Headphones</h2>
+                    <div class="product-nested-cards">
+                        <div class="nested-card">
+                            <img src="images/card1.jpg">
+                            <p>boAt Up to 75% off | boAt</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card2.jpg">
+                            <p>boAtUp to 75% off | boult</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card3.jpg">
+                            <p>boAtUp to 75% off | noise</p>
+                        </div>
+
+                        <div class="nested-card">
+                            <img src="images/card4.jpg">
+                            <p>boAtUp to 75% off | zebronics</p>
+                        </div>
+                    </div>
+                    <button class="card-product-btn">see more</button>
+                </div>
+            </div>
+        </div>
+        <!-- card product section end -->
+
+        <!-- today's deals section start -->
+        <section class="today_deals_container">
+
+            <!-- today's deals heading start-->
+            <div class="today_deals_heading">
+                <h1>Today's Deals</h1>
+                <p><a href="">See all deals</a></p>
+            </div>
+            <!-- today's deals heading end -->
+
+            <!-- today's deals product start-->
+            <div class="today_deals_product">
+                <!-- buttons start -->
+                <div class="today_deals_btn">
+                    <button class="today_btn" id="today_deal_btn_prev">
+                        &#10094;
+                    </button>
+                    <button class="today_btn" id="today_deal_btn_next">
+                        &#10095;
+                    </button>
+                </div>
+                <!-- buttons end -->
+
+                <!-- product list start -->
+                <div class="today_deals_product_list">
+                    <div class="today_deals_item">
+                        <img src="images/box1_image.jpg"/>
+                        <div class="discount">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+
+                    <div class="today_deals_item">
+                        <img src="images/box1_image.jpg"/>
+                        <div class="discount">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+
+                    <div class="today_deals_item">
+                        <img src="images/box1_image.jpg"/>
+                        <div class="discount">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+
+                    <div class="today_deals_item">
+                        <img src="images/box1_image.jpg"/>
+                        <div class="discount">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+
+                    <div class="today_deals_item">
+                        <img src="images/box1_image.jpg"/>
+                        <div class="discount">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+
+                    <div class="today_deals_item">
+                        <img src="images/box1_image.jpg"/>
+                        <div class="discount">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+
+                    <div class="today_deals_item">
+                        <img src="images/box1_image.jpg"/>
+                        <div class="discount">
+                            <a href="#">Up to 52% off</a>
+                            <a href="#">Deal of the day</a>
+                        </div>
+                        <p>adidas and Campus Footwear</p>
+                    </div>
+
+                </div>
+                <!-- product list end -->
+            </div>
+            <!-- today's deals product end -->
+ 
+        </section>
+        <!-- today's deals section end -->
+        
+    </main>
+    <!-- main section end -->
+
+    <!-- footer section start-->
+    <footer>
+        <!-- footer panel 1 start -->
+        <div class="footer_panel1">
+            Back to top
+        </div>
+        <!-- footer panel 1 end -->
+
+        <!-- footer panel 2 start -->
+        <div class="footer_panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>›See More Make Money with Us</a>
+            </ul>
+
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Return & Replacements</a>
+                <a>Manage Your Conent and Devices</a>
+                <a>Amazon Assistant</a>
+                <a>Help</a>
+            </ul>
+        </div>
+        <!-- footer panel 2 start end -->
+
+        <!-- footer panel 3 start-->
+        <div class="footer_panel3">
+            <img src="images/amazon_logo.png" alt="">
+            <div class="language_content">
+                <i class="fa-solid fa-globe"></i>
+                <h5>English</h5>
+                <i id="down" class="fa-solid fa-caret-down"></i>
+            </div> 
+        </div>
+        <!-- footer panel 3 end -->
+
+        <!-- footer panel 4 start -->
+        <div class="footer_panel4">
+            <div class="footer_content">
+                <a href="">Conditions of Use & Sale</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Interest-Based Ads</a>
+            </div>
+            <div class="copyright">
+                © 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+        <!-- footer panel 5 end -->
+    </footer>
+    <!-- footer section end -->
+    <script src="js/javascript.js" type="module"></script>
+</body>
+</html>
