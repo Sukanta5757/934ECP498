@@ -161,29 +161,3 @@
  }
 
 
-
-/* footer content */
- footer {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer .footer_content {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-footer .footer_content a {
-    color: rgb(73, 83, 228);
-    font-size: 12px;
-}
-
-footer .copyright {
-margin-right: 50p;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    font-size: 12px;
-
-}

@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Clone Registration</title>
     <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/panelbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    {{>navbar}}
+    {{>panelbar}}
     <div class="container">
         <div class="inner_content">
             <div class="amazon_logo">
@@ -80,17 +86,6 @@
     </div>
 
     <!-- footer content -->
-    <footer>
-        <div class="footer_inner">
-            <div class="footer_content">
-                <a href="">Conditions of Use</a>
-                <a href="">Privacy Notice</a>
-                <a href="">Help</a>
-            </div>
-            <div class="copyright">
-                © 1996-2023, Amazon.com, Inc. or its affiliates
-            </div>
-        </div>
-    </footer>
+    {{>footer}}
 </body>
 </html>

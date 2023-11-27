@@ -1,0 +1,218 @@
+/* Panel section start */
+.panel {
+    margin-top: 60px;
+    height: 40px;
+    background-color: #14273d;
+    display:flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+/* Left Panel section start */
+.left-panel {  
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+}
+
+.left-panel .left-panel-all {
+    height: 34px;
+    width: 60px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid transparent;
+}
+
+.left-panel .left-panel-all:hover {
+    border: 1px solid white;
+}
+
+.left-panel .left-panel-all  i {
+    font-size: 22px;
+}
+
+.left-panel .left-panel-all  p {
+    font-size: 15px;
+  
+}
+
+.left-panel .left-panel-opction {
+    height: 34px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-panel .left-panel-opction .opction_list {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left-panel .left-panel-opction p {
+    margin-right: 7px;
+    margin-left: 7px;
+    font-size: 13px;
+}
+
+.left-panel .left-panel-opction .opction_list:hover {
+    border: 1px solid white;
+}
+
+/* left panel end */
+
+
+/* Right Panel start*/
+.right-panel {
+    margin-right: 5px;
+    height: 34px;
+    display:flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    border: 2px solid transparent;
+}
+.right-panel:hover {
+    border:2px solid white
+}
+
+.right-panel .right-panel-opction{
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right-panel .right-panel-opction .opction_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.right-panel .right-panel-opction .festival{
+    font-size: 15px;
+    margin-right: 3px;
+    margin-left: 10px;
+}
+
+.right-panel .right-panel-opction .vertical{
+
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.right-panel .right-panel-opction .shop-now {
+    margin-left: 3px;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+/* right panel end */
+
+/* panel media query screen 480px -767px start */
+@media (min-width:480px) and (max-width:767px) {
+   /* left panel */
+    .left-panel .left-panel-all {
+        margin-left: 5px;
+    }
+
+    .left-panel .left-panel-all  i {
+        font-size: 17px;
+    }
+
+    .left-panel .left-panel-all  p {
+        margin-left: 3px;
+        font-size: 12px;
+    }
+
+    .left-panel .left-panel-opction {
+        margin: 5px;
+    }
+
+    .left-panel .left-panel-opction p {
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 10px;
+    }
+
+    /* Right Panel */
+    .right-panel {
+        display:none;
+    }
+    
+}
+/* panel media query screen 480px - 767px end */
+
+/* panel media query screen 768px - 991px start */
+@media (min-width:768px) and (max-width:991px) {
+     /* left panel */
+     .left-panel .left-panel-all  i {
+         font-size: 20px;
+     }
+ 
+     .left-panel .left-panel-all  p {
+         margin-left: 3px;
+         font-size: 15px;
+     }
+ 
+     .left-panel .left-panel-opction p {
+         margin-right: 7px;
+         margin-left: 5px;
+         font-size: 12px;
+     }
+ 
+     /* Right Panel */
+     .right-panel {
+         display:none;
+     }
+     
+ }
+ /* panel media query screen 768px - 991px end */
+
+ /* panel media query screen 992px -1200px start */
+@media (min-width:992px) and (max-width:1200px) {
+     /* left panel */
+    .left-panel .left-panel-all  i {
+        font-size: 20px;
+    }
+
+    .left-panel .left-panel-all  p {
+        margin-left: 3px;
+        font-size: 15px;
+    }
+
+    .left-panel .left-panel-opction p {
+        margin-right: 7px;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    /* Right Panel */
+    .right-panel {
+        display:block;
+    }
+
+    .right-panel .right-panel-opction .festival{
+        font-size: 11px;
+        width: 100px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    
+    .right-panel .right-panel-opction .shop-now {
+        font-size: 12px;
+        width: 40px;
+    }
+    
+}
+/* panel media query screen 992px - 1200px end */
+
+/* panel section end */

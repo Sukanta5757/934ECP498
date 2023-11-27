@@ -155,28 +155,3 @@
 .container .form_policy p a{
     color: rgb(73, 83, 228);
 }
-
-/* footer content */
-
-footer {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer .footer_content {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-footer .footer_content a {
-    color: rgb(73, 83, 228);
-    font-size: 12px;
-}
-
-footer .copyright {
-    color: rgb(98, 86, 86);
-    margin-top: 10px;
-    font-size: 12px;
-}
