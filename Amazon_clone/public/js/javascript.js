@@ -68,7 +68,7 @@ for (let i = 0; i < todayDeallength; i++) {
 
     todayDealProductHTML += `
         <div class="today_deals_item">
-            <div class="todayDeals_product_image">
+            <div class="today_img">
                 <img src=${todayDeal[i].img} />
             </div>
             <div class="discount">
