@@ -405,7 +405,6 @@
 
 .discount a{
     font-size: 10px;
-    padding: 5px 10px;
     font-size: 14px;
     color:rgb(211, 30, 84);
     text-decoration: none;
@@ -447,17 +446,6 @@
     background-color: rgba(149, 121, 121, 0.4);
 }
 /* buttons end */
-
-
-.todayDeals_product_image {
-    /* margin-top: 5px;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 15px; */
-}
 
 /* today's deals screen 480px - 767px start */
 @media (min-width:480px) and (max-width:767px){
