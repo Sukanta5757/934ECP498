@@ -168,7 +168,7 @@
     margin-right: 200px;
     width: 500px;
     height:450px ;
-    /* display:none ; */
+    display:none ;
     box-shadow: 3px 3px 5px 0px rgb(177, 152, 152);
 }
 .navbar .nav-signin:hover .sign_list_box {
