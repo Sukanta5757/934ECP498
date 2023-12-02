@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border:border-box;
+}
+
 /* footer section start */
 footer {
     /* margin-top: -300px; */

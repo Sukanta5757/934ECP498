@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish List</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/panelbar.css">
+    <link rel="stylesheet" href="css/wish_list.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- hearder section start -->
+    <header>
+        <!-- navbar section start -->
+        {{>navbar}}
+        <!-- navbar section end -->
+
+        <!-- Panel section start -->
+        {{>panelbar}}
+        <!-- panel section end-->
+    </header>
+    <!-- hearder section end -->
+    
+    {{!-- wish list section start --}}
+    <div class="_w_l_container">
+        <div class="heading_content">
+            <h1><a href="">Your Lists</a></h1>
+            <h1><a href="">Your Idea Lists</a></h1>
+            <h1><a href="">Your Friends</a></h1>
+        </div>
+        <div class="innercontent">
+            <div class="banner_intro">
+                <div class="intro_items">
+                    <span class="banner_header">List</span>
+                    <span class="banner_subheader">for all your shopping needs</span>
+                    <button><a href="">Sign In</a></button>
+                </div>
+            </div>
+
+            <div class="benefits_intro">
+                <div class="benefit_1">
+                    <div class="benefit_inner">
+                        <div class="benefit_left">
+                            <img src="images/benefit1.svg" alt="">
+                        </div>
+                        <div class="benefit_rihgt">
+                            <h3>Save time</h3>
+                            <span>Add your items and ideas in one convenient loction</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="benefit2">
+                    <div class="benefit_inner">
+                        <div class="benefit_left">
+                            <img src="images/benefit2.svg" alt="">
+                        </div>
+                        <div class="benefit_right">
+                            <h3>Give great gifts</h3>
+                            <span>Remember your friends lists and share yours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefit3">
+                    <div class="benefit_inner">
+                        <div class="benefit_left">
+                            <img src="images/benefit3.svg" alt="">
+                        </div>
+                        <div class="benefit_right">
+                            <h3>Check price changes</h3>
+                            <span>Check when items from uour lists drop in price</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features_intro">
+                <div class="features_inner">
+                    <div class="features_left">
+                        <span>Body Wishlist</span>
+                    </div>
+                    <div class="features_right">
+                        <img src="images/features.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    {{!-- wish list section end --}}
+
+    <!-- footer content start -->
+    {{>footer}}
+</body>
+</html>

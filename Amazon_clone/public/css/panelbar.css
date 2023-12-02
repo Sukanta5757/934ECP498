@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border:border-box;
+}
+
 /* Panel section start */
 .panel {
     margin-top: 60px;

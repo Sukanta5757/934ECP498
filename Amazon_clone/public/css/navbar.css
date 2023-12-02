@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border:border-box;
+}
+
 /* navbar section start */
 .navbar {
     z-index: 11;

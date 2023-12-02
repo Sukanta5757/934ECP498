@@ -31,6 +31,10 @@ app.get("/home", (req,res)=>{
     res.render('index')
 })
 
+app.get("/wish_list", (req,res)=>{
+    res.render('wish_list')
+})
+
 app.listen(port, ()=> {
     console.log(`listening to the port at ${port}`)
 })
