@@ -3,3 +3,161 @@
     font-family: Arial;
     border:border-box;
 }
+
+.w_l_container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* heading content section start */
+.w_l_container .heading_content{
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+}
+
+.w_l_container .heading_content h1{
+    margin-right: 25px;
+    font-size: 25px;
+    font-weight:normal;
+    color: black;
+}
+
+.w_l_container .heading_content h1 a {
+    text-decoration:none;
+}
+
+.w_l_container .heading_content h1 a:hover {
+    text-decoration:underline;
+    color:rgb(27, 152, 180) ;
+}
+/* heading content section end */
+
+/* inner content start */
+.w_l_container .inner_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:20px ;
+    margin-top: 10px;
+    border: 0.5px solid rgb(166, 155, 155);
+}
+
+/* banner intro section start */
+.w_l_container .inner_content .banner_intro {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.w_l_container .inner_content .banner_intro .intro_items {
+    height: 200px;
+    margin:20px ;
+    background-image: url('https://tse1.mm.bing.net/th?id=OIP.T60y-8D7oX2GGvubqEIkogHaD0&pid=Api&P=0&h=220');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.w_l_container .inner_content .banner_intro .banner_header {
+    font-size: 70px;
+    font-family: HelveticaNeue-Thin;
+
+}
+
+.w_l_container .inner_content .banner_intro .banner_subheader {
+    font-size: 40px;
+    font-family: HelveticaNeue-Thin;
+}
+
+.w_l_container .inner_content .banner_intro button {
+    margin-top: 20px;
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: rgb(248, 224, 3);
+    border: none;
+}
+
+.w_l_container .inner_content .banner_intro button:hover {
+    box-shadow: 2px 2px 5px rgb(145, 212, 246);
+}
+
+.w_l_container .inner_content .banner_intro a {
+    font-size: 12px;
+    text-decoration: none;
+    font-family: HelveticaNeue-Thin;
+}
+/* banner intro sectioh end */
+
+/* benefits intro section start */
+.w_l_container .inner_content .benefits_intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 200px;
+    width: 850px;
+}
+
+.w_l_container .inner_content .benefits_intro .benefit_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 400px;
+}
+
+.w_l_container .inner_content .benefits_intro .benefit_left img {
+    height: 70px;
+    margin-right: 20px;
+}
+
+.w_l_container .inner_content .benefits_intro .benefit_right {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.w_l_container .inner_content .benefits_intro .benefit_right span {
+    font-size: 15px;
+    margin-top: 10px;
+}
+/* benefits intro section end */
+
+ /* features intro section start */
+.w_l_container .inner_content .features_intro {
+    width: 850px;
+    border-top: 0.5px solid rgb(192, 179, 179);
+    background-color: blue;
+}
+
+.w_l_container .inner_content .features_intro .features_inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.w_l_container .inner_content .features_intro .features_left span {
+    font-size: 15px;
+    color: rgb(29, 130, 176);
+}
+
+.w_l_container .inner_content .features_intro .features_left span:hover {
+    color: rgb(176, 85, 29);
+}
+
+.w_l_container .inner_content .features_intro .features_right img{
+    height: 80px;
+    width: 80px;
+ }
+ /* features intro section end */
+
+/* inner content end */

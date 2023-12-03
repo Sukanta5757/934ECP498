@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/panelbar.css">
     <link rel="stylesheet" href="css/wish_list.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <!-- hearder section start -->
@@ -23,13 +25,18 @@
     <!-- hearder section end -->
     
     {{!-- wish list section start --}}
-    <div class="_w_l_container">
+    <div class="w_l_container">
+        {{!-- heading content section start --}}
         <div class="heading_content">
             <h1><a href="">Your Lists</a></h1>
             <h1><a href="">Your Idea Lists</a></h1>
             <h1><a href="">Your Friends</a></h1>
         </div>
-        <div class="innercontent">
+        {{!-- heading content section end --}}
+
+        {{!-- inner content start --}}
+        <div class="inner_content">
+            {{!-- banner intro section start --}}
             <div class="banner_intro">
                 <div class="intro_items">
                     <span class="banner_header">List</span>
@@ -37,14 +44,16 @@
                     <button><a href="">Sign In</a></button>
                 </div>
             </div>
+            {{!-- banner intro section end --}}
 
+            {{!-- benefits intro section start --}}
             <div class="benefits_intro">
                 <div class="benefit_1">
                     <div class="benefit_inner">
                         <div class="benefit_left">
                             <img src="images/benefit1.svg" alt="">
                         </div>
-                        <div class="benefit_rihgt">
+                        <div class="benefit_right">
                             <h3>Save time</h3>
                             <span>Add your items and ideas in one convenient loction</span>
                         </div>
@@ -76,7 +85,9 @@
                     </div>
                 </div>
             </div>
+            {{!-- benefits intro section end --}}
 
+            {{!-- features intro section start --}}
             <div class="features_intro">
                 <div class="features_inner">
                     <div class="features_left">
@@ -87,8 +98,9 @@
                     </div>
                 </div>
             </div>
-
+            {{!-- features intro section end --}}
         </div>
+        {{!-- inner content end --}}
 
     </div>
     {{!-- wish list section end --}}
