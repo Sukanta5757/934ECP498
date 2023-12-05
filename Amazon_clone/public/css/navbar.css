@@ -171,10 +171,10 @@
     position: absolute;
     background-color: white;
     right:0;
-    margin-right: 200px;
+    margin-right: 15%;
     width: 500px;
     height:450px ;
-    display:none ;
+    display:block ;
     box-shadow: 3px 3px 5px 0px rgb(177, 152, 152);
 }
 .navbar .nav-signin:hover .sign_list_box {
@@ -187,7 +187,7 @@
     background-color: white;
     transform: rotate(45deg);
     margin-top: -10px;
-    margin-left: 350px;
+    margin-left: 70%;
     border-right: none;
     border-bottom:none;
 }
@@ -277,6 +277,7 @@
 }
 .navbar .sign_list_box .list_bar a:hover, .account_bar a:hover {
     text-decoration: underline;
+    color: rgb(248, 119, 14);
 }
 /* box5 end */
 
@@ -346,6 +347,52 @@
 
     .navbar .nav-signin .account-list{
         font-size: 15px;
+    }
+
+    /* sign & list  box  */
+    .navbar .sign_list_box{
+        margin-right: 35%;
+        width: 300px;
+        height:350px ;
+    }
+
+    .navbar .sign_list_box .sign_account_bar{
+        margin-top: 10px;
+        width: 300px;
+        height: 320px;
+        position: relative;
+        overflow: auto;
+    }
+    .sign_account_bar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navbar .sign_list_box .shape{
+        height: 15px;
+        width: 15px;
+        margin-top: -7.5px;
+    }
+
+    .navbar .sign_list_box .signin_bar::before {
+        width: 260px;
+    }
+
+    .navbar .sign_list_box .account_list_bar {
+        margin-top: 20px;
+    }
+
+    .navbar .sign_list_box .account_list_bar::before {
+        left: 150px;
+    }
+
+    .navbar .sign_list_box .account_bar {
+        margin: 0px;
+        margin-right: 15px;
+    }
+
+    .navbar .sign_list_box .list_bar {
+        margin-right: 15px;
+        margin: 0px;
     }
 
     /* box5 */
