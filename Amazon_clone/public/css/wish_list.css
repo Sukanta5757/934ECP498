@@ -29,6 +29,7 @@
 
 .w_l_container .heading_content h1 a:hover {
     text-decoration:underline;
+    font-weight: bold;
     color:rgb(27, 152, 180) ;
 }
 /* heading content section end */
@@ -136,7 +137,6 @@
 .w_l_container .inner_content .features_intro {
     width: 850px;
     border-top: 0.5px solid rgb(192, 179, 179);
-    background-color: blue;
 }
 
 .w_l_container .inner_content .features_intro .features_inner {
@@ -160,4 +160,103 @@
  }
  /* features intro section end */
 
+/* wish list section screen 480px - 767px start */
+@media (min-width:480px) and (max-width:767px) {
+    
+    /* heading content section start */
+    .w_l_container .heading_content{
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    
+    .w_l_container .heading_content h1{
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    /* heading content section end */
+    
+    /* inner content start */
+    .w_l_container .inner_content {
+        margin:10px ;
+    }
+    
+    /* banner intro section start */
+    .w_l_container .inner_content .banner_intro {
+        height: 150px;
+    }
+    
+    .w_l_container .inner_content .banner_intro .intro_items {
+        height: 100px;
+        margin:10px ;
+    }
+    
+    .w_l_container .inner_content .banner_intro .banner_header {
+        font-size: 40px;    
+    }
+    
+    .w_l_container .inner_content .banner_intro .banner_subheader {
+        font-size: 15px;
+        font-family: HelveticaNeue-Thin;
+    }
+    
+    .w_l_container .inner_content .banner_intro button {
+        margin-top: 5px;
+        height: 20px;
+        width: 50px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    /* banner intro section end */
+    
+    /* benefits intro section start */
+    .w_l_container .inner_content .benefits_intro {
+        margin-top: 0px;
+        height: 100px;
+        width: 440px;
+        margin-bottom: 20px;
+    }
+    
+    .w_l_container .inner_content .benefits_intro .benefit_inner {
+        height: 40px;
+        width: 210px;
+    }
+    
+    .w_l_container .inner_content .benefits_intro .benefit_left img {
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    .w_l_container .inner_content .benefits_intro .benefit_right {
+        width: 150px;
+    }
+
+    .w_l_container .inner_content .benefits_intro .benefit_right h3 {
+        font-size: 12px;
+    }
+    
+    .w_l_container .inner_content .benefits_intro .benefit_right span {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    /* benefits intro section end */
+    
+     /* features intro section start */
+    .w_l_container .inner_content .features_intro {
+        width: 440px;
+    }
+    
+    .w_l_container .inner_content .features_intro .features_inner {
+        margin: 10px;
+    }
+    
+    .w_l_container .inner_content .features_intro .features_left span {
+        font-size: 12px;
+    }
+    
+    .w_l_container .inner_content .features_intro .features_right img{
+        height: 40px;
+        width: 40px;
+     }
+     /* features intro section end */
+    }
 /* inner content end */
