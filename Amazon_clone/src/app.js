@@ -3,6 +3,7 @@ const app = express();
 const port = 8000;
 const path = require('path');
 const hbs = require('hbs');
+require('./db_conn/db_connect')
 
 //public static path
 console.log(path.join(__dirname, "../public"));

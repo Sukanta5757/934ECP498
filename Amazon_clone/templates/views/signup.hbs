@@ -20,7 +20,7 @@
             </div>
             
             <!-- form content -->
-            <form action="">
+            <form action="/signup"  method="POST">
                 <div class="inner_form">
                     <div class="form_heading"> 
                         <h1>Create Account</h1>
@@ -29,7 +29,7 @@
                     <!-- Name input -->
                     <div class="form_input">
                         <h5>Your name</h5>
-                        <input type="text" id="user_name" placeholder="first and last name">
+                        <input type="text" id="user_name" name="name" placeholder="first and last name">
                     </div>
 
                     <!-- Mobile input -->
@@ -39,19 +39,19 @@
                             <option>IN +91 </option>
                             <option>IN +1</option>
                         </select>
-                        <input type="text" id="user_mobile" placeholder="Mobile number">
+                        <input type="text" id="user_mobile" name="mobile" placeholder="Mobile number">
                     </div>
 
                     <!-- Email input -->
                     <div class="form_input">
                         <h5>Email (optional)</h5>
-                        <input type="text" id="user_email" placeholder="Email">
+                        <input type="text" id="user_email" name="email" placeholder="Email">
                     </div>
 
                     <!-- Password input -->
                     <div class="form_input">
                         <h5>Password</h5>
-                        <input type="text" id="user_password" placeholder="At least 6 characters">
+                        <input type="text" id="user_password" name="password" placeholder="At least 6 characters">
                         <p><span>i</span> Passwords must be at least 6 characters</p>
                     </div>
 
