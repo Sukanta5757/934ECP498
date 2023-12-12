@@ -3,8 +3,10 @@ const app = express();
 const port = 8000;
 const path = require('path');
 const hbs = require('hbs');
-require('./db_conn/db_connect')
+require('./db_conn/db_connect');
+const User = require('./models/user_Schema');
 
+app.use(express.urlencoded({extended:false}));
 //public static path
 console.log(path.join(__dirname, "../public"));
 const static_path = path.join(__dirname, "../public");
@@ -26,6 +28,17 @@ app.get("/signin", (req,res)=>{
 
 app.get("/signup", (req,res)=>{
     res.render('signup')
+})
+
+app.post("/signup", async(req,res)=>{
+    try{
+        // res.send(req.body);
+        const userData = new User(req.body);
+        await userData.save();
+        res.status(201).render("index");
+    }catch (error){
+        res.status(500).send(error);
+    }
 })
 
 app.get("/home", (req,res)=>{
