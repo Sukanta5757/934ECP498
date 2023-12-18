@@ -19,21 +19,26 @@
                 <img src="images/amazon_logo.png" alt="">
             </div>
             <!-- form content -->
-            <form action="">
+            <form action="/signin" method="POST">
                 <div class="inner_form">
                     <div class="form_heading"> 
                         <h1>Sign in</h1>
                     </div>
-
-                    <!-- Name input -->
+                    <!-- Email input -->
                     <div class="form_input">
-                        <h5>Email or mobile phone number</h5>
-                        <input  type="text" id="user_name" placeholder="">
+                        <h5 id="h5">{{EmailMessege}}</h5>
+                        <input  type="text" id="user_name" name="mobile" placeholder="">
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form_input">
+                        <h5 id="h5">{{Password}}</h5>
+                        <input  type="text" id="user_name" name="password" placeholder="">
                     </div>
 
                     <!-- Sumbit button -->
                     <div class="form_sumbit_btn" style="box-shadow: none;" >
-                        <button>continue</button>
+                        <button id="login_btn">continue</button>
                     </div>
 
                     <!-- policy -->
@@ -72,4 +77,6 @@
 
     <!-- footer content -->
     {{>footer}}
+    <script src="js/signin.js" type="module"></script>
+
 </html>

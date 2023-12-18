@@ -6,6 +6,7 @@ const hbs = require('hbs');
 require('./db_conn/db_connect');
 const User = require('./models/user_Schema');
 
+app.use(express.json())
 app.use(express.urlencoded({extended:false}));
 //public static path
 console.log(path.join(__dirname, "../public"));
@@ -23,7 +24,35 @@ hbs.registerPartials(partials_path);
 
 // routing
 app.get("/signin", (req,res)=>{
-    res.render('signin')
+    res.render('signin', {
+        EmailMessege:"Enter Your Email ID",
+        Password:"Enter Your Password",
+        UserName:"sign in"
+    })
+})
+
+app.post("/signin", async(req,res)=>{
+    try {
+       const email = req.body.mobile;
+       const password = req.body.password;
+       const useremail = await User.findOne({email:email});
+        if(useremail.password === password  ){
+            console.log(useremail.name ,"login successfull");
+            res.status(201).render("index", {
+                UserName:useremail.name,
+            });
+        }
+        else{
+            res.status(500).render("signin",{
+                EmailMessege:"Invlid Email Id",
+                Password:"Invlid Password",
+                UserName:"sign in"
+            });
+        }     
+    }
+    catch(error) {
+        res.status(500).render("signin");
+    }
 })
 
 app.get("/signup", (req,res)=>{
@@ -32,8 +61,12 @@ app.get("/signup", (req,res)=>{
 
 app.post("/signup", async(req,res)=>{
     try{
-        // res.send(req.body);
-        const userData = new User(req.body);
+        const userData = new User({
+            name : req.body.name, 
+            mobile : req.body.mobile,
+            email : req.body.email,
+            password : req.body.password
+        });
         await userData.save();
         res.status(201).render("index");
     }catch (error){

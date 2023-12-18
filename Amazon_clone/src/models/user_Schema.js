@@ -10,17 +10,14 @@ const userSchema = new mongoose.Schema({
     mobile:{
         type:Number,
         required:true,
+        unique:true,
         mini:10
     }
     ,
     email:{
         type:String,
+        unique:true,
         required:true
-    //     validate(value){
-    //         if(!validator.isEmail(value)){
-    //             throw new Error("Invalid email id")
-    //         }
-    //     }
     }
     ,
     password:{
