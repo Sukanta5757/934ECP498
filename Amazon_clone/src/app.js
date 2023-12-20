@@ -23,6 +23,7 @@ const partials_path = path.join(__dirname, "../templates/partials");
 hbs.registerPartials(partials_path);
 
 // routing
+// signin router start
 app.get("/signin", (req,res)=>{
     res.render('signin', {
         EmailMessege:"Enter Your Email ID",
@@ -33,7 +34,7 @@ app.get("/signin", (req,res)=>{
 
 app.post("/signin", async(req,res)=>{
     try {
-       const email = req.body.mobile;
+       const email = req.body.email;
        const password = req.body.password;
        const useremail = await User.findOne({email:email});
         if(useremail.password === password  ){
@@ -41,22 +42,23 @@ app.post("/signin", async(req,res)=>{
             res.status(201).render("index", {
                 UserName:useremail.name,
             });
-        }
-        else{
-            res.status(500).render("signin",{
-                EmailMessege:"Invlid Email Id",
-                Password:"Invlid Password",
-                UserName:"sign in"
-            });
-        }     
+        }    
     }
     catch(error) {
-        res.status(500).render("signin");
+        res.status(500).render("signin",{
+            EmailMessege:"Invlid Email Id",
+            Password:"Invlid Password",
+            UserName:"sign in"
+        });
     }
 })
+// signin router end
 
+// singup router start
 app.get("/signup", (req,res)=>{
-    res.render('signup')
+    res.render('signup', {
+        UserName:"sign in"
+    })
 })
 
 app.post("/signup", async(req,res)=>{
@@ -68,11 +70,17 @@ app.post("/signup", async(req,res)=>{
             password : req.body.password
         });
         await userData.save();
-        res.status(201).render("index");
+        res.status(201).render("index", {
+            UserName:userData.name
+        });
     }catch (error){
-        res.status(500).send(error);
+        res.status(500).render("signup",{
+            errors:"Email or Number Already Registion... ",
+            UserName:"sign in"
+        });
     }
 })
+// signin router end
 
 app.get("/home", (req,res)=>{
     res.render('index')

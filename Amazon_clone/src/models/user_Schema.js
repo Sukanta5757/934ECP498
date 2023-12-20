@@ -2,28 +2,28 @@ const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
     name:{
-        type:String,
-        required:true,
-        miniLength:3
+        type: String,
+        required: true,
+        miniLength: 3
     }
     ,
     mobile:{
-        type:Number,
-        required:true,
-        unique:true,
-        mini:10
+        type: Number,
+        required: true,
+        unique: true,
+        mini: 10
     }
     ,
     email:{
-        type:String,
-        unique:true,
-        required:true
+        type: String,
+        unique: true,
+        required: true
     }
     ,
     password:{
-        type:String,
-        required:true,
-        miniLength:5
+        type: String,
+        required: true,
+        miniLength: 5
     }
 })
 
