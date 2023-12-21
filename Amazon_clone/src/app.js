@@ -69,13 +69,16 @@ app.post("/signup", async(req,res)=>{
             email : req.body.email,
             password : req.body.password
         });
+
+        // generate token 
+        const token = await userData.generateToken();
         await userData.save();
         res.status(201).render("index", {
             UserName:userData.name
         });
     }catch (error){
         res.status(500).render("signup",{
-            errors:"Email or Number Already Registion... ",
+            alert:"Email or Number Already Registion... ",
             UserName:"sign in"
         });
     }
