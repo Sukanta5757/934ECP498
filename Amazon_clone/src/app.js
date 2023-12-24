@@ -5,8 +5,11 @@ const path = require('path');
 const hbs = require('hbs');
 require('./db_conn/db_connect');
 const User = require('./models/user_Schema');
+const jwt = require("jsonwebtoken");
+const cookieParser = require('cookie-parser');
 
 app.use(express.json())
+app.use(cookieParser());
 app.use(express.urlencoded({extended:false}));
 //public static path
 console.log(path.join(__dirname, "../public"));
@@ -23,37 +26,6 @@ const partials_path = path.join(__dirname, "../templates/partials");
 hbs.registerPartials(partials_path);
 
 // routing
-// signin router start
-app.get("/signin", (req,res)=>{
-    res.render('signin', {
-        EmailMessege:"Enter Your Email ID",
-        Password:"Enter Your Password",
-        UserName:"sign in"
-    })
-})
-
-app.post("/signin", async(req,res)=>{
-    try {
-       const email = req.body.email;
-       const password = req.body.password;
-       const useremail = await User.findOne({email:email});
-        if(useremail.password === password  ){
-            console.log(useremail.name ,"login successfull");
-            res.status(201).render("index", {
-                UserName:useremail.name,
-            });
-        }    
-    }
-    catch(error) {
-        res.status(500).render("signin",{
-            EmailMessege:"Invlid Email Id",
-            Password:"Invlid Password",
-            UserName:"sign in"
-        });
-    }
-})
-// signin router end
-
 // singup router start
 app.get("/signup", (req,res)=>{
     res.render('signup', {
@@ -79,6 +51,37 @@ app.post("/signup", async(req,res)=>{
     }catch (error){
         res.status(500).render("signup",{
             alert:"Email or Number Already Registion... ",
+            UserName:"sign in"
+        });
+    }
+})
+// signin router end
+
+// signin router start
+app.get("/signin", (req,res)=>{
+    res.render('signin', {
+        EmailMessege:"Enter Your Email ID",
+        Password:"Enter Your Password",
+        UserName:"sign in"
+    })
+})
+
+app.post("/signin", async(req,res)=>{
+    try {
+       const email = req.body.email;
+       const password = req.body.password;
+       const useremail = await User.findOne({email:email});
+        if(useremail.password === password  ){
+            console.log(useremail.name ,"login successfull");
+            res.status(201).render("index", {
+                UserName:useremail.name,
+            });
+        }    
+    }
+    catch(error) {
+        res.status(500).render("signin",{
+            EmailMessege:"Invlid Email Id",
+            Password:"Invlid Password",
             UserName:"sign in"
         });
     }
