@@ -7,6 +7,7 @@ require('./db_conn/db_connect');
 const User = require('./models/user_Schema');
 const jwt = require("jsonwebtoken");
 const cookieParser = require('cookie-parser');
+const auth = require('./middleware/auth');
 
 app.use(express.json())
 app.use(cookieParser());
@@ -44,6 +45,13 @@ app.post("/signup", async(req,res)=>{
 
         // generate token 
         const token = await userData.generateToken();
+        console.log("sign token" + token)
+        //cookie
+        res.cookie("jwt", token, {
+            expires: new Date(Date.now()+ 60000),
+            httpOnly: true
+        })
+
         await userData.save();
         res.status(201).render("index", {
             UserName:userData.name
@@ -71,6 +79,15 @@ app.post("/signin", async(req,res)=>{
        const email = req.body.email;
        const password = req.body.password;
        const useremail = await User.findOne({email:email});
+
+       //cookie
+       const token = await useremail.generateToken();
+        res.cookie("jwt", token, {
+        expires: new Date(Date.now()+ 60000),
+        httpOnly: true
+        })
+    
+
         if(useremail.password === password  ){
             console.log(useremail.name ,"login successfull");
             res.status(201).render("index", {
@@ -92,7 +109,8 @@ app.get("/home", (req,res)=>{
     res.render('index')
 })
 
-app.get("/wish_list", (req,res)=>{
+app.get("/wish_list",auth, (req,res)=>{
+    console.log(req.cookies.jwt +" signin tok");
     res.render('wish_list')
 })
 

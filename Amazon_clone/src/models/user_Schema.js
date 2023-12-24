@@ -40,7 +40,8 @@ userSchema.methods.generateToken = async function(){
         const token = jwt.sign({_id: this._id.toString()}, "mynamemaabinjhagiriprojectandjob");
         this.tokens = this.tokens.concat({token:token})
         await this.save();
-        console.log(token);
+        console.log(token + "sign token");
+        return token;
     } catch (error){
         res.send("the error part" + error);
         console.log("the error part" + error);
