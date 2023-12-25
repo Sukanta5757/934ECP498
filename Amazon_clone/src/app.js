@@ -114,6 +114,26 @@ app.get("/wish_list",auth, (req,res)=>{
     res.render('wish_list')
 })
 
+app.get("/logout",auth, async(req,res)=>{
+    try{
+        req.user.tokens = req.user.tokens.filter((tokenucrr)=> {
+            return tokenucrr.token !== req.token
+        })
+        res.clearCookie("jwt")
+        console.log("logout succuss")
+        await req.user.save();
+        res.render('signin'
+        ,{
+            EmailMessege:"Enter Your Email ID",
+            Password:"Enter Your Password",
+            UserName:"sign in"
+        }
+        )
+    }catch(error){
+        res.status(401).send(error)
+    }
+})
+
 app.listen(port, ()=> {
     console.log(`listening to the port at ${port}`)
 })
