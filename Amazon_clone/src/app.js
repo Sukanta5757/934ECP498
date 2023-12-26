@@ -30,7 +30,8 @@ hbs.registerPartials(partials_path);
 // singup router start
 app.get("/signup", (req,res)=>{
     res.render('signup', {
-        UserName:"sign in"
+        UserName:"sign in",
+        signin:"Sign in"
     })
 })
 
@@ -48,18 +49,21 @@ app.post("/signup", async(req,res)=>{
         console.log("sign token" + token)
         //cookie
         res.cookie("jwt", token, {
-            expires: new Date(Date.now()+ 60000),
+            // expires: new Date(Date.now()+ 60000),
             httpOnly: true
         })
 
         await userData.save();
         res.status(201).render("index", {
-            UserName:userData.name
+            UserName:userData.name,
+            signin:"Hello "+userData.name,
+            logout:"Logout"
         });
     }catch (error){
         res.status(500).render("signup",{
             alert:"Email or Number Already Registion... ",
-            UserName:"sign in"
+            UserName:"sign in",
+            signin:"Sign in"
         });
     }
 })
@@ -70,7 +74,8 @@ app.get("/signin", (req,res)=>{
     res.render('signin', {
         EmailMessege:"Enter Your Email ID",
         Password:"Enter Your Password",
-        UserName:"sign in"
+        UserName:"sign in",
+        signin:"Sign in"
     })
 })
 
@@ -83,7 +88,7 @@ app.post("/signin", async(req,res)=>{
        //cookie
        const token = await useremail.generateToken();
         res.cookie("jwt", token, {
-        expires: new Date(Date.now()+ 60000),
+        // expires: new Date(Date.now()+ 60000),
         httpOnly: true
         })
     
@@ -92,6 +97,8 @@ app.post("/signin", async(req,res)=>{
             console.log(useremail.name ,"login successfull");
             res.status(201).render("index", {
                 UserName:useremail.name,
+                signin:"hello "+useremail.name,
+                logout:"Logout"
             });
         }    
     }
@@ -99,7 +106,8 @@ app.post("/signin", async(req,res)=>{
         res.status(500).render("signin",{
             EmailMessege:"Invlid Email Id",
             Password:"Invlid Password",
-            UserName:"sign in"
+            UserName:"sign in",
+            signin:"Sign in"
         });
     }
 })
@@ -110,15 +118,20 @@ app.get("/home", (req,res)=>{
 })
 
 app.get("/wish_list",auth, (req,res)=>{
-    console.log(req.cookies.jwt +" signin tok");
-    res.render('wish_list')
+    // console.log(req.cookies.jwt +" signin tok");
+    res.render('wish_list', {
+        UserName:req.user.name,
+        signin:"Sign in"
+    })
+    console.log(req.user.name+ "jhjg");
 })
 
 app.get("/logout",auth, async(req,res)=>{
     try{
-        req.user.tokens = req.user.tokens.filter((tokenucrr)=> {
-            return tokenucrr.token !== req.token
-        })
+        // req.user.tokens = req.user.tokens.filter((tokenucrr)=> {
+        //     return tokenucrr.token !== req.token
+        // })
+        req.user.tokens = [];
         res.clearCookie("jwt")
         console.log("logout succuss")
         await req.user.save();
@@ -126,7 +139,8 @@ app.get("/logout",auth, async(req,res)=>{
         ,{
             EmailMessege:"Enter Your Email ID",
             Password:"Enter Your Password",
-            UserName:"sign in"
+            UserName:"sign in",
+            signin:"Sign in"
         }
         )
     }catch(error){
