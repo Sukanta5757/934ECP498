@@ -167,6 +167,17 @@ app.get("/OrderReturn", auth, (req,res)=>{
     })
 })
 // order & return router end 
+
+// Your Account router start 
+app.get("/YourAccount", auth, (req,res)=>{
+    res.render("YourAccount",{
+        UserName:req.user.name,
+        signin:"Hello "+req.user.name,
+        logout:"Logout"
+    })
+})
+// Your Account router end
+
 app.listen(port, ()=> {
     console.log(`listening to the port at ${port}`)
 })
