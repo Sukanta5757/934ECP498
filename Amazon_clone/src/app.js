@@ -114,10 +114,11 @@ app.post("/signin", async(req,res)=>{
 // signin router end
 
 //home router start
-app.get("/home", (req,res)=>{
+app.get("/home", auth, (req,res)=>{
     res.render('index',{
-        UserName:"sign jhjhin",
-        signin:"Sign in"
+        UserName:req.user.name,
+        signin:"Hello "+req.user.name,
+        logout:"Logout"
     })
 })
 //home router end
@@ -177,6 +178,16 @@ app.get("/YourAccount", auth, (req,res)=>{
     })
 })
 // Your Account router end
+
+// Carts router start 
+app.get("/Carts", auth, (req,res)=>{
+    res.render("Carts",{
+        UserName:req.user.name,
+        signin:"Hello "+req.user.name,
+        logout:"Logout"
+    })
+})
+// Carts router end
 
 app.listen(port, ()=> {
     console.log(`listening to the port at ${port}`)
