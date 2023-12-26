@@ -172,6 +172,9 @@
 .nested-card{
     max-width: 125px;
     padding: 10px;
+    color: black;
+    text-decoration: none;
+
 }
 
 .nested-card img {

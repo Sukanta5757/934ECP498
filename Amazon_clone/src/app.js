@@ -189,6 +189,16 @@ app.get("/Carts", auth, (req,res)=>{
 })
 // Carts router end
 
+// Mobiles router start 
+app.get("/Mobiles", auth, (req,res)=>{
+    res.render("Products/Mobiles",{
+        UserName:req.user.name,
+        signin:"Hello "+req.user.name,
+        logout:"Logout"
+    })
+})
+// Carts router end
+
 app.listen(port, ()=> {
     console.log(`listening to the port at ${port}`)
 })
