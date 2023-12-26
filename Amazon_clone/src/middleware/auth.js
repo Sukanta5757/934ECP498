@@ -12,7 +12,13 @@ const auth = async(req, res, next) =>{
         req.user = user;
         next()
     }catch(error){
-        res.status(401).send(error);
+        // res.status(401).send(error);
+        res.status(401).render('signin',{
+            EmailMessege:"Enter Your Email ID",
+            Password:"Enter Your Password",
+            UserName:"sign in",
+            signin:"Sign in"
+        });
     }
 }
 module.exports = auth;

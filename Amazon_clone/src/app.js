@@ -97,7 +97,7 @@ app.post("/signin", async(req,res)=>{
             console.log(useremail.name ,"login successfull");
             res.status(201).render("index", {
                 UserName:useremail.name,
-                signin:"hello "+useremail.name,
+                signin:"Hello "+useremail.name,
                 logout:"Logout"
             });
         }    
@@ -113,19 +113,28 @@ app.post("/signin", async(req,res)=>{
 })
 // signin router end
 
+//home router start
 app.get("/home", (req,res)=>{
-    res.render('index')
+    res.render('index',{
+        UserName:"sign jhjhin",
+        signin:"Sign in"
+    })
 })
+//home router end
 
+//wish_list router start
 app.get("/wish_list",auth, (req,res)=>{
     // console.log(req.cookies.jwt +" signin tok");
     res.render('wish_list', {
         UserName:req.user.name,
-        signin:"Sign in"
+        signin:"Hello "+req.user.name,
+        logout:"Logout"
     })
     console.log(req.user.name+ "jhjg");
 })
+// wish_list router end 
 
+// logout router start 
 app.get("/logout",auth, async(req,res)=>{
     try{
         // req.user.tokens = req.user.tokens.filter((tokenucrr)=> {
@@ -147,7 +156,17 @@ app.get("/logout",auth, async(req,res)=>{
         res.status(401).send(error)
     }
 })
+// logout router end 
 
+// order & return router start 
+app.get("/OrderReturn", auth, (req,res)=>{
+    res.render("OrderReturn",{
+        UserName:req.user.name,
+        signin:"Hello "+req.user.name,
+        logout:"Logout"
+    })
+})
+// order & return router end 
 app.listen(port, ()=> {
     console.log(`listening to the port at ${port}`)
 })
